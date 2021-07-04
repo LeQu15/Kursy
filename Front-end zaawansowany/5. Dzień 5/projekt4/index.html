@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: arial;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            transition: 1s;
+            border: 0 solid black;
+        }
+
+        h1.big {
+            font-size: 160px;
+        }
+
+        h1.small {
+            font-size: 40px;
+        }
+
+        h1.border {
+            border: 10px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="bordered">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(".larger").click(function () {
+            $("h1").toggleClass("big");
+        })
+
+        $(".smaller").click(function () {
+            $("h1").toggleClass("small");
+        })
+
+        $(".bordered").click(function () {
+            $("h1").toggleClass("border");
+        })
+    </script>
+
+</body>
+
+</html>

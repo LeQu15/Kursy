@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        .bell {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            font-size: 50px;
+            width: 80px;
+            height: 80px;
+            border: 6px solid cadetblue;
+            border-radius: 50%;
+            color: cadetblue;
+            text-align: center;
+            line-height: 80px;
+            transition: .2s;
+            cursor: pointer;
+        }
+
+        .bell i {
+            animation: bell linear infinite .5s alternate;
+            transform-origin: 50% 0;
+            transition: .2s;
+        }
+
+        .bell:hover {
+            background-color: cadetblue;
+        }
+
+        .bell:hover i {
+            color: white;
+            animation: none;
+        }
+
+        @keyframes bell {
+            0% {
+                transform: rotate(30deg);
+            }
+
+            100% {
+                transform: rotate(-30deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bell">
+        <i class="fas fa-bell"></i>
+    </div>
+</body>
+
+</html>

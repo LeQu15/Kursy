@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            position: absolute;
+            top: calc(50% - 5vh - 4px);
+            ;
+            left: calc(50% - 5vw - 84px);
+            border: 2px solid black;
+            padding: 0;
+            width: 20vw;
+            height: 10vh;
+            background-color: #fff;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        button span {
+            display: block;
+            line-height: 100px;
+            position: relative;
+            top: 0;
+            transition: .2s linear;
+        }
+
+        button:hover span {
+            top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button><span>Kup teraz</span><span>Super okazja!</span></button>
+</body>
+
+</html>

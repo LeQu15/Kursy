@@ -22,11 +22,10 @@ header {
   background-color: orangered;
   height: 100vh;
   overflow: hidden;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
-header > * {
+header>* {
   position: absolute;
 }
 

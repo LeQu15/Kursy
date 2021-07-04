@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>
+        .arrow {
+            width: 80px;
+            height: 80px;
+            font-size: 50px;
+            background-color: blue;
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            left: calc(50% - 40px);
+            border-style: none;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            transform: scale(1.2);
+        }
+
+        .arrow:hover i {
+            font-size: 70px;
+            transform: rotate(90deg);
+            text-shadow: none;
+            color: white;
+            animation: none;
+            top: calc(50% - 35px);
+            left: calc(50% - 22.5px);
+
+        }
+
+        .arrow i {
+            position: absolute;
+            top: -100px;
+            left: calc(50% - 15.5px);
+            text-shadow: 0 -20px 0 white, 0 20px 0 white;
+            animation: fly linear 1.5s infinite;
+            transform: rotate(0);
+            transition: .3s;
+        }
+
+        @keyframes fly {
+            0% {
+                top: -100px;
+            }
+
+            100% {
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="arrow">
+        <i class="fas fa-angle-down"></i>
+
+    </button>
+</body>
+
+</html>

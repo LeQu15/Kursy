@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+
+        }
+
+        button.s1 {
+            position: relative;
+            padding: 10px 25px;
+            margin: 100px;
+            font-size: 40px;
+            border-style: none;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        button.s1:hover span {
+            left: 10%;
+
+        }
+
+        span {
+            position: absolute;
+            width: 80%;
+            height: 3px;
+            background-color: black;
+            bottom: 0;
+            left: -80%;
+            transition: .4s;
+        }
+
+        button.s2 {
+            position: relative;
+            padding: 10px 25px;
+            margin: 100px;
+            font-size: 40px;
+            border-style: none;
+            border: gray 1px solid;
+            background-color: whitesmoke;
+            overflow: hidden;
+        }
+
+        button.s2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 6px;
+            background-color: #000;
+            transition: .5s linear;
+        }
+
+        button.s2:hover::after {
+            left: 0;
+        }
+
+        button.s3 {
+            position: relative;
+            padding: 10px 25px;
+            margin: 100px;
+            font-size: 40px;
+            border: black 2px solid;
+            background-color: transparent;
+            border-radius: 20px;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+            color: black;
+            overflow: hidden;
+            transition: .25s .05s linear;
+        }
+
+        button.s3::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transition: .3s linear;
+            z-index: -1;
+        }
+
+        button.s3:hover::before {
+            width: 100%;
+        }
+
+        button.s3:hover {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="s1">Przycisk<span></span></button>
+    <button class="s2">Przycisk</button>
+    <button class="s3">Przycisk</button>
+</body>
+
+</html>

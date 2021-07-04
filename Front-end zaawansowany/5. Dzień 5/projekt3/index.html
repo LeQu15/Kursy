@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: block;
+            margin: 100px auto;
+            font-size: 40px;
+            line-height: 70px;
+            padding: 0 40px;
+            background-color: #fff;
+            border: 3px solid black;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            transition: .15s .05s;
+        }
+
+        button:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            border-left: 20px solid white;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            transition: .2s;
+        }
+
+        button:hover::before {
+            left: 0;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -100%;
+            border-right: 20px solid white;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            transition: .2s;
+        }
+
+        button:hover::after {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Przycisk</button>
+</body>
+
+</html>

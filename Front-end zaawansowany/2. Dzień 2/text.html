@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navH: 10vh;
+            --headH: 90vh;
+        }
+
+        html {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav,
+        header {
+            position: fixed;
+            width: 100%;
+        }
+
+        nav {
+            height: var(--navH);
+            background-color: green;
+            line-height: var(--navH);
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        header {
+            height: var(--headH);
+            background-color: yellow;
+            line-height: var(--headH);
+            top: 0;
+            margin-top: var(--navH);
+            left: 0;
+            z-index: -1;
+        }
+
+        main {
+            height: 200vh;
+            margin-top: calc(var(--navH) + var(--headH));
+            background-image: linear-gradient(100deg, red 40%, orange 70%, purple 100%);
+            line-height: 200vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>10% wysokości okna</nav>
+    <header>90% wysokości okna</header>
+    <main>200% wysokości okna</main>
+</body>
+
+</html>
