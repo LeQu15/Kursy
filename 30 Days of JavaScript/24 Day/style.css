@@ -1,0 +1,87 @@
+body {
+    background-image: url('images/galaxy.gif')
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 60px;
+    text-shadow: 2px 2px 1px #1f97bf;
+}
+
+div.choose {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    padding: 0;
+    border: 1px solid black;
+    font-size: 16px;
+    text-indent: 20px;
+}
+
+select {
+    min-height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    border: 1px solid black;
+    color: gray;
+    text-indent: 20px;
+    font-size: 16px;
+}
+
+button {
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    min-height: 50px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+div.container {
+    background-color: rgba(211, 211, 211, 0.2);
+    width: 80%;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.box {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.2);
+    margin: 0 auto;
+    width: 60%;
+    font-family: Arial;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+    height: 80px;
+    flex-direction: column;
+}
+
+p.mass {
+    margin: 20px 0;
+}
+
+div.two {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p.mass {
+    display: inline-block;
+}
+
+select {
+    text-transform: uppercase;
+}
