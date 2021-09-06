@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e13edcd8b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>World Countries Data</h1>
+        <h2>Currently, we have x countries</h2>
+        <p class="text"></p>
+    </header>
+    <div class="search">
+        <input type="text" placeholder="Search countries by name, city and languages">
+    </div>
+    <div class="desc">
+        <nav class="buttons">
+            <button id="name">
+                <p>name</p>
+                <i id="nam" class="fas fa-arrow-up hidden"></i>
+            </button>
+            <button id="capital">
+                <p>capital</p>
+                <i id="cap" class="fas fa-arrow-up hidden"></i>
+            </button>
+            <button id="population">
+                <p>population</p>
+                <i id="pop" class="fas fa-arrow-up hidden"></i>
+            </button>
+            <button id="sort"><i class="fas fa-chart-bar"></i>
+
+                </i></button>
+        </nav>
+    </div>
+    <main id="container">
+    </main>
+
+    <nav>
+        <div class="buttons2">
+            <button id="population2">population</button>
+            <button id="languages2">languages</button>
+        </div>
+        <p class="desc2"></p>
+    </nav>
+    <div id="box2">
+
+
+    </div>
+    <footer>
+        <p class="author">Developed by AY</p>
+        <a href="#"><i id="start" class=" fas fa-arrow-up"></i></a>
+    </footer>
+
+
+    <script type="module" src="countries_data.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

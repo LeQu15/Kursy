@@ -1,0 +1,128 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div#inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+div#inputs>* {
+    margin-right: 10px;
+}
+
+input {
+    padding: 10px 10px;
+    width: 150px;
+    border: 1px solid #e3c4bf;
+    font-size: 18px;
+}
+
+button {
+    background-color: #e3c4bf;
+    border: none;
+    color: white;
+    padding: 11px 30px;
+    font-size: 18px;
+}
+
+p.error {
+    color: red;
+    text-align: center;
+    font-family: Arial;
+    font-size: 22px;
+}
+
+p.hidden {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid gray !important;
+}
+
+div#box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+div.person {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #e3c4bf;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div.person>div {
+    width: 25%;
+}
+
+
+div.fourth {
+    display: flex;
+    flex-direction: row;
+}
+
+div.fourth>p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 50%;
+    padding: 17px;
+    font-size: 12px;
+}
+
+div.fourth>p.remove {
+    color: red;
+    margin-right: 4px;
+}
+
+div.fourth>p.addPoints {
+    margin-right: 4px;
+}
+
+div.fourth>p:hover {
+    background-color: lightgreen;
+}
+
+div.first>p {
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 3px;
+}
+
+div.first>p.date {
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 12px;
+    color: gray;
+}
+
+div.first {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.second>p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.third>p {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}

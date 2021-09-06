@@ -43,7 +43,8 @@ button.style.height = "60px"
 
 let box = document.querySelector('div#box')
 box.style.width = "70%"
-box.style.margin = "50px 0 0 400px"
+box.style.margin = "0 auto"
+box.style.marginTop = '50px'
 let number
 const errorMessage = document.querySelector('p.error')
 errorMessage.style.color = "red"

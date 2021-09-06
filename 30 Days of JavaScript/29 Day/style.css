@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+body.one {
+    background-color: green;
+}
+
+
+
+span.one {
+    font-size: 120px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+span.two {
+    font-size: 120px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+body.two {
+    background-color: #48557a;
+}
+
+body.three {
+    background-color: #c4a85a;
+}
+
+span.three {
+    font-size: 120px;
+    font-family: Arial;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+body.four {
+    background-color: #a3edf0
+}
+
+span.four {
+    font-size: 120px;
+    font-family: Arial;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+body.five {
+    background-color: #bfbfff
+}
+
+span.five {
+    font-size: 120px;
+    font-family: Arial;
+    font-family: 'Passion One';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+span.six {
+    font-size: 120px;
+    font-family: Arial;
+    font-family: 'Passion One';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+body.six {
+    background-color: #71aaad
+}
+
+span.seven {
+    font-size: 120px;
+    font-family: Arial;
+    font-family: 'Passion One';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+body.seven {
+    background-color: #f3fabe;
+}
+
+body.eight {
+    background-color: #d5fabe;
+}
+
+span.eight {
+    font-size: 120px;
+    font-family: Arial;
+    font-family: 'Passion One';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Validating web forms</h1>
+    <div id="form">
+        <p class="title">First Name</p>
+        <input type="text" id="name" class="good">
+        <p class="info orange hidden">First name must be alphanumeric and contain 3-16 characters</p>
+        <p class="title">Last name</p>
+        <input type="text" id="lastName" class="good">
+        <p class="info orange hidden">Last name must be alphanumeric and contain 3-16 characters</p>
+        <p class="title">Email</p>
+        <input type="email" id="email" class="good">
+        <p class="info orange hidden">Email must be a valid address, e.g. example@example.com</p>
+        <p class="title">Password</p>
+        <input type="password" id="password" class="good">
+        <p class="info orange hidden">Password must be alphanumeric (@, _, and - are allowed) and between 6-20
+            characters</p>
+        <p class="title">Telephone</p>
+        <input type="text" id="phone" class="good">
+        <p class="info orange hidden">A valid Telephone number (11 digits and 333-333-3334)</p>
+        <p class="title">Your bio</p>
+        <input type="text" id="bio" class="good">
+        <p class="info orange hidden">Bio name must contain only lowercase letters, underscores, hyphens and be 8-50
+            characters</p>
+        <button>Submit</button>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

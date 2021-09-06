@@ -69,6 +69,7 @@ langButton.addEventListener('click', () => {
         container.style.display = "flex"
         container.style.marginBottom = "12px"
         container.style.alignItems = "center"
+        container.style.height = '40px'
 
         title = document.createElement('p')
         title.textContent = arrayOfNumbers[i].number
@@ -76,14 +77,15 @@ langButton.addEventListener('click', () => {
         title.style.fontFamily = "Arial"
         title.style.fontSize = "30px"
         title.style.margin = "0 1% 0 10%"
-        title.style.width = "15%"
-        title.style.height = "60px"
-        title.style.lineHeight = "60px"
+        title.style.width = "40%"
+        title.style.maxWidth = '400px'
+        title.style.height = "40px"
+        title.style.lineHeight = "40px"
 
         divWidth = document.createElement('div')
         divWidth.style.display = "inline-block"
         divWidth.style.width = "45%"
-        divWidth.style.height = "60px"
+        divWidth.style.height = "40px"
 
         width = document.createElement('div')
         width.style.backgroundColor = "orange"
@@ -93,16 +95,16 @@ langButton.addEventListener('click', () => {
             elementWidth = (arrayOfNumbers[i].count / arrayOfNumbers[0].count) * 100 + "%"
             width.style.width = elementWidth
         }
-        width.style.height = "60px"
+        width.style.height = "40px"
 
         count = document.createElement('p')
         count.textContent = arrayOfNumbers[i].count
         count.style.display = "inline-block"
         count.style.fontFamily = "Arial"
         count.style.fontSize = "30px"
-        count.style.margin = "0 10%"
-        count.style.height = "60px"
-        count.style.lineHeight = "60px"
+        count.style.margin = "0 10% 0 5%"
+        count.style.height = "40px"
+        count.style.lineHeight = "40px"
 
         main.appendChild(container)
         container.appendChild(title)
@@ -149,6 +151,8 @@ popButton.addEventListener('click', () => {
         container.style.display = "flex"
         container.style.marginBottom = "12px"
         container.style.alignItems = "center"
+        container.style.justifyContent = 'space-between'
+        container.style.height = '40px'
 
         title = document.createElement('p')
         title.textContent = pop[i].name
@@ -156,14 +160,15 @@ popButton.addEventListener('click', () => {
         title.style.fontFamily = "Arial"
         title.style.fontSize = "30px"
         title.style.margin = "0 1% 0 10%"
-        title.style.width = "15%"
-        title.style.height = "60px"
-        title.style.lineHeight = "60px"
+        title.style.width = "40%"
+        title.style.maxWidth = '400px'
+        title.style.height = "40px"
+        title.style.lineHeight = "40px"
 
         divWidth = document.createElement('div')
         divWidth.style.display = "inline-block"
         divWidth.style.width = "45%"
-        divWidth.style.height = "60px"
+        divWidth.style.height = "40px"
 
         width = document.createElement('div')
         width.style.backgroundColor = "orange"
@@ -173,16 +178,16 @@ popButton.addEventListener('click', () => {
             elementWidth = (pop[i].population / pop[0].population) * 100 + "%"
             width.style.width = elementWidth
         }
-        width.style.height = "60px"
+        width.style.height = "40px"
 
         count = document.createElement('p')
         count.textContent = pop[i].population.toLocaleString(('en-US'))
         count.style.display = "inline-block"
         count.style.fontFamily = "Arial"
         count.style.fontSize = "30px"
-        count.style.margin = "0 10%"
-        count.style.height = "60px"
-        count.style.lineHeight = "60px"
+        count.style.margin = "0 10% 0 5%"
+        count.style.height = "40px"
+        count.style.lineHeight = "40px"
 
         main.appendChild(container)
         container.appendChild(title)

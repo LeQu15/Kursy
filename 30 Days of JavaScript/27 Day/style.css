@@ -1,0 +1,93 @@
+body {
+    width: 80%;
+    margin: 0 auto
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110px;
+    letter-spacing: 15px;
+    font-weight: normal;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    width: 100%;
+    background-color: #ebc0b9;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+
+p.icon {
+    margin-left: 30px;
+}
+
+p.title {
+    transform: translateX(-20px);
+}
+
+p.desc {
+    font-size: 21px;
+    line-height: 45px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.box {
+    font-size: 30px;
+    font-family: Arial;
+    text-transform: uppercase;
+    border: 1px solid #ebebeb;
+    width: 500px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    transition: .09s linear;
+}
+
+div.box:hover {
+    background-color: #ebc0b9;
+    transform: scale(1.09);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: Arial;
+    height: 300px;
+    align-items: flex-start;
+}
+
+p.tech {
+    color: orange;
+    font-size: 45px;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p.technologies {
+    margin: 0;
+    display: inline-block;
+}
+
+span.container {
+    width: 900px;
+}
+
+span.bold {
+    font-weight: bold;
+}
